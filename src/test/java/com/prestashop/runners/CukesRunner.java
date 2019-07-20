@@ -7,8 +7,10 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+		tags="@login",
 		features="src/test/resources/com/prestashop/features",
-		glue="com/prestashop/step_definitions"
+		glue="com/prestashop/step_definitions",
+		dryRun=false
 		)
 public class CukesRunner {
 
